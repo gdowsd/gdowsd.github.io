@@ -93,7 +93,7 @@
             <div class="mb-4">
               <h2>About Me</h2>
               <p>
-              Hi! My name is <strong>Gabby Dow<strong>. I lived in Dallas all through elementary school and now call St. Louis my home where I went to middle and high school. In high school, I had
+              Hi! My name is <strong>Gabby Dow</strong>. I lived in Dallas all through elementary school and now call St. Louis my home where I went to middle and high school. In high school, I had
               amazing opportunities to travel around the world on service and educational trips where I learned about many cultures, old and new, exploring
               different art forms, learning the history of the Bible, speaking new languages, and more. I love applying the knowledge I learn in the classroom
               into the world and into my experiences to deepen my understanding and love for learning. 
@@ -146,7 +146,7 @@
               The results are displayed in a table, showing the probability of birthday matches as the group size increases. 
               </p>
               <p>
-              This project was coded in Java using four different classes, each with its own purpose. The Simulator class is the main class that manages 
+              This project is coded in Java using four different classes, each with its own purpose. The Simulator class is the main class that manages
               the experiements. The Experiment class manages the Trials for each of the varying Experiment sizes indicated by the Simulator and keeps track 
               of the percentage of Birthday matches. The Trial class represents one Trial, generating a list of Birthdays and checking for matches within that
               list. The Birthday class creates random valid birthdays, using a consistent and controlled seed for reproducibility.
@@ -168,15 +168,9 @@
       </div>
       
 
-    </section>
-
-
-    <section class="site-section border-bottom" id="projects-section">
       <div class="container">
         <div class="row mb-5 justify-content-center">
-          <div class="col-md-8 text-center">
-            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Projects</h2>
-          </div>
+          <div class="col-md-8 text-center"> </div>
         </div>
         <div class="row">
           <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
@@ -188,24 +182,30 @@
             <div class="mb-4">
               <h3>Elevator Simulator</h3>
               <p>
-                The Birthday Paradox says that in a random group of 23 people, there is about a 50 percent chance that two people within that group will have the same birthday.
+                Our Elevator Simulator is a model of how different types of elevators work together in a building to pick up and drop off people efficiently.
+                The different elevators all have different capabilities and rules for accepting new calls whether it's limited to only top floors or limited
+                to the number of people that travel at the same time. It's simulating a real-world scenario.
               </p>
               <p>
-                The program simulates this Birthday Paradox phenomenon by randomly generating birthdays for groups of varying sizes (from 5 to 100,
-                in increments of 5) and running multiple trials for each of the experiments to determine how often shared birthdays occur within the group.
-                The results are displayed in a table, showing the probability of birthday matches as the group size increases.
+                This program implements two types of Schedulers, simple and complex, that look at the state of the elevators, asks if it can take the next call,
+                and assigns based on the scheduler capability and elevator availability. Upon running the program, the user can customize the number and type of
+                elevators, the type of scheduler they would like to use, the number of floors in the building, and the file with the list of calls. After running,
+                the elevators give updates on its state--its current floor, direction, the call it's on or availability, etc.
               </p>
               <p>
-                This project was coded in Java using four different classes, each with its own purpose. The Simulator class is the main class that manages
-                the experiements. The Experiment class manages the Trials for each of the varying Experiment sizes indicated by the Simulator and keeps track
-                of the percentage of Birthday matches. The Trial class represents one Trial, generating a list of Birthdays and checking for matches within that
-                list. The Birthday class creates random valid birthdays, using a consistent and controlled seed for reproducibility.
+                This project is coded in Java using a variety of interfaces and classes all working together. There is a Scheduler interface implemented by
+                the Simple and Complex Schedulers. There is an Elevator abstract class with concrete and abstract methods implemented by the four concrete
+                Elevators: Standard, Freight, Penthouse, and Express. And to bring it all together, the Simulator class takes all the user requests and runs
+                the Elevator Simulation, updating the user on the states of the elevators after each round.
               </p>
+
               <p>
-                Throughout this project, I learned about the importance of test-driven development. When starting with the tests, it forced me
-                to think through the expected behavior of the code which ultimately made the implementation much more efficient. When I got to coding,
-                I already had a solid idea of the design; the classes, attributes, and methods I needed to grasp the full picture of the project.
-                Test-driven development encouraged a simple project design that made for less debugging and easy collaboration with my partner.
+                Throughout this project, I had to be very intentional using Github. This project wasn't just "code, commit, push, repeat" like many other projects
+                in the past, but me and my partner divided up the work and used different Github features like branching and pull requests. Not only did it make
+                collaboration much easier and more efficient, but when we ran into errors, we were able to use branches to isolate the problems, fix them, make a pull
+                request so that my partner was able to see and approve the changes, and then merge to make sure it worked well with the code in the main branch.
+                From now on, with big projects like these, where there are many different project features and multiple people collaborating, making use of Github features
+                like branching and creating pull requests has significant benefits.
               </p>
 
 
